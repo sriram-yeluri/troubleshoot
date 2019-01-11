@@ -1,3 +1,4 @@
+## SSH Connection Failure
 
 * The server might not be configured to accept public key authentication. Make sure /etc/ssh/sshd_config on the server contains PubkeyAuthentication yes. Remember to restart the sshd process on the server.
 * If trying to login as root, the server might not be configured to allow root logins. Make sure /etc/sshd_config includes PermitRootLogin yes, PermitRootLogin prohibit-password, or without-password. If it is set to forced-commands-only, the key must be manually configured to use a forced command (see command= option in ~/.ssh/authorized_keys.
